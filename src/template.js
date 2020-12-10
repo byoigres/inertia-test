@@ -1,0 +1,4 @@
+"use strict";
+exports.__esModule = true;
+var template = function (page, viewData) { return "\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n    \n    <!-- Custom data -->\n    <title>" + viewData.title + "</title>\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap\" />\n    <!-- Your React, Vue or Svelte SPA -->\n    <!-- <link rel=\"stylesheet\" href=\"/build/bundle.css\" /> -->\n  </head>\n\n  <!-- The Inertia page object -->\n  <body>\n    <div id=\"app\" data-page='" + JSON.stringify(page) + "'></div>\n    <script defer type=\"module\" src=\"/app.js\"></script>\n  </body>\n</html>\n"; };
+exports["default"] = template;
